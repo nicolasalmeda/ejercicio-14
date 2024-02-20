@@ -1,0 +1,38 @@
+.container-admin-recetas{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex-grow: 1;
+  background-color:#d1ffe2 ;
+}
+
+.title-admin{
+padding: 20px;
+}
+
+.card-admin{
+  display: flex; 
+  background-color: #7caf90;
+  justify-content: space-between;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.buttons{
+  display: flex;
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  
+  .card-admin{
+    display: flex; 
+    flex-direction: column;
+    background-color: #7caf90;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    gap: 15px;
+  }
+}

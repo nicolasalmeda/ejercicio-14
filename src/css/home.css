@@ -1,0 +1,31 @@
+.home{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #e1ffec;
+    align-items: center;
+    justify-content: center;
+}
+.recetas-btn{
+  width: 250px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #466b55;
+}
+
+.recetas-btn:hover{
+  background-color: #3a5745;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.p-btn{
+  font-size: 20px;
+  font-weight: bold;
+}

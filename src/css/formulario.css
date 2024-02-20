@@ -1,0 +1,83 @@
+.container-formulario{
+  padding: 20px 0px;
+  background-color: #7caf90;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.subtitle{
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  margin: 10px 0px;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: auto;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  flex-grow: 1;
+  text-align: center;
+}
+
+label{
+  display: flex !important;
+  flex-direction: column;
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  margin: 5px 0px;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+}
+
+input{
+  border: none;
+  border-radius: 10px;
+  padding: 5px;
+  width: 50%;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 10px;
+  background-color: #f0fff5;
+  color: rgb(0, 0, 0);
+}
+
+.input-receta{
+  padding-bottom: 100px;
+}
+
+input:hover{
+  border-color:  #5f9173;
+}
+
+span{
+  color: #ff0101;
+  font-size: 15px;
+  font-weight: 700;
+  margin-top: 5px;
+}
+
+.button-crear-receta{
+  width: 150px;
+  padding: 10px;
+  border-radius: 15px !important;
+  background-color: #395846;
+  border: none;
+}
+
+.recetas-btn:hover{
+  background-color: #2f4738;
+  cursor: pointer;
+  transform: scale(1.1) !important;
+}

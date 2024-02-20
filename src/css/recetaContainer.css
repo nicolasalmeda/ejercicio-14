@@ -1,0 +1,81 @@
+.receta-container{
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  text-align: center;
+  background-color:#e1ffec ;
+  padding: 20px;
+}
+
+.btn-container-create{
+  display: flex;
+  justify-content: end;
+  height: 15%;
+}
+
+.title-h{
+  height: 15%;
+}
+
+.container-receta{
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-recetas{
+  flex-grow: 1;
+  display: flex;
+}
+
+.btn-container-create button{
+  width: 150px;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: #2ca55d;
+  margin: 10px;
+  border: none;
+}
+
+.btn-container-create button:hover{
+  background-color: rgb(145, 217, 172);
+  cursor: pointer;
+  transform: scale(1.1);
+  color: rgb(13, 13, 13);
+  font-weight: 700;
+}
+
+.btn-container-create-big{
+  display: flex;
+  justify-content: center;
+  height: 30vh;
+  align-items: center;
+}
+
+.btn-container-create-big button{
+  width: 200px;
+  border-radius: 10px;
+  background-color: #2ca55d;
+  margin: 10px;
+  border: none;
+  padding: 30px;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.btn-container-create-big button:hover{
+  background-color: rgb(145, 217, 172);
+  cursor: pointer;
+  transform: scale(1.1);
+  color: rgb(13, 13, 13);
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  
+  .container-recetas{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+}
