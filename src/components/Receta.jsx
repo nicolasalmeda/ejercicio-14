@@ -6,6 +6,7 @@ function Receta({receta}) {
 
   return (
     <div className="card col-12 col-md-4 col-lg-3 card-specific">
+      <img src={receta.imagen} className="card-img-top img-card" alt={receta.titulo}/>
       <div className="card-body ">
         <h5 className="card-title">{receta.titulo}</h5>
         <hr/>

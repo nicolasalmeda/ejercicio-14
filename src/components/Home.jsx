@@ -13,7 +13,7 @@ const Home = () => {
 
   return (
     <Container fluid className='home'>
-      <Container>
+      <Container className='home'>
         <h3>Bienvenido al blog de recetas</h3> 
         <p>Tu destino culinario para explorar el fascinante mundo de la gastronomía! Aquí en nuestro rincón digital, nos embarcamos en un viaje lleno de sabores, aromas y experiencias culinarias que te inspirarán en la cocina.
 

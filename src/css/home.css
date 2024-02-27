@@ -11,6 +11,10 @@
     background-color: #e1ffec;
     align-items: center;
     justify-content: center;
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 .recetas-btn{
   width: 250px;
