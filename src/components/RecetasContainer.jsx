@@ -1,8 +1,9 @@
-import React, { useEffect,useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Container from 'react-bootstrap/esm/Container'
 import Receta from './Receta'
 import '../css/recetaContainer.css' 
 import { useNavigate } from 'react-router-dom'
+import { obtenerRecetas } from '../helpers/queries'
 
 const RecetasContainer = () => {
   const [recetas, setRecetas] = useState([])
@@ -13,12 +14,20 @@ const RecetasContainer = () => {
   }
 
   useEffect(() => {
-    const recetasGuardadas = JSON.parse(localStorage.getItem('recetas')) || []
-    setRecetas(recetasGuardadas)
+    obtenerRecetasApi()
   }, [])
 
+  const obtenerRecetasApi = async () => {
+    try{
+      const recetasApi = await obtenerRecetas()
+      setRecetas(recetasApi)
+    }catch(error){
+      console.error(error)
+    }
+    
+  }
 
-  console.log(recetas)
+
 
   return (
     <Container fluid className='receta-container'>
@@ -32,7 +41,7 @@ const RecetasContainer = () => {
           <div className='btn-container-create'>
             <button onClick={crearReceta}>Crear Receta</button>
           </div>
-          <div className="container-fluid d-flex gap-3 container-recetas ">
+          <div className="container d-flex gap-3 flex-wrap ">
             {recetas.map((receta, index) => (
               <Receta key={index} receta={receta}/>
             ))}

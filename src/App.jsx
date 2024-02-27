@@ -16,7 +16,8 @@ function App() {
         <Route path="/" element={<Home/>}/>
         <Route path="/admin" element={<AdminRecetas/>} />
         <Route path="/recetas" element={<RecetasContainer/>} />
-        <Route path="/formulario" element={<Formulario/>} />
+        <Route path="/formulario" element={<Formulario titulo={"Crear Receta"} edit={false} />} />
+        <Route path="/formulario/:id" element={<Formulario titulo={"Editar Receta"} edit={true} />} />
         <Route path="*" element={<h1>Not Found</h1>} />
       </Routes>
       <Footer/>

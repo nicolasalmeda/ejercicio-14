@@ -1,0 +1,28 @@
+{
+  "recetas": [
+    {
+      "titulo": "Albondigas",
+      "imagen": "https://cdn0.recetasgratis.net/es/posts/9/7/9/albondigas_de_carne_molida_45979_600_square.jpg",
+      "descripcion": "Las mejores albondigas de carne molida con salsa de tomate. ¡Deliciosas!",
+      "id": "4269"
+    },
+    {
+      "titulo": "Guiso",
+      "imagen": "https://img-global.cpcdn.com/recipes/e037b7b29fc1e00c/400x400cq70/photo.jpg",
+      "descripcion": "Guiso de carne con papas, zanahorias y arvejas. ¡Riquísimo!",
+      "id": "a565"
+    },
+    {
+      "titulo": "Tarta de jamon y queso",
+      "imagen": "https://lacteosbarraza.com.ar/home/wp-content/uploads/2020/09/tarta-jamon-queso.jpg",
+      "descripcion": "Tarta de jamón y queso con masa casera. ¡Una delicia!",
+      "id": "6e69"
+    },
+    {
+      "titulo": "Pollo con arroz",
+      "imagen": "https://cdn.recetasderechupete.com/wp-content/uploads/2017/08/Pollo-con-arroz.jpg",
+      "descripcion": "Saltear pollo, añadir arroz y caldo. Cocinar hasta que esté tierno. ¡Listo!",
+      "id": "4fd2"
+    }
+  ]
+}

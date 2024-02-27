@@ -1,6 +1,7 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import { NavLink } from 'react-router-dom';
 import "../css/navbar.css"
 
 const NavBar = () => {
@@ -11,8 +12,8 @@ const NavBar = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="container-fluid d-flex justify-content-end">
-            <Nav.Link href="recetas">Recetas</Nav.Link>
-            <Nav.Link href="admin">Aministrar Recetas</Nav.Link>
+            <Nav.Link as={NavLink} to="/recetas" activeclassname="navlink-active">Recetas</Nav.Link>
+            <Nav.Link as={NavLink} to="/admin" activeclassname="navlink-active">Aministrar recetas</Nav.Link>          
           </Nav>
         </Navbar.Collapse>
       </Container>
