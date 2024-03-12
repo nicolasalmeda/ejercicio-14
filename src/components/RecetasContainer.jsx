@@ -21,6 +21,7 @@ const RecetasContainer = () => {
     try{
       const recetasApi = await obtenerRecetas()
       setRecetas(recetasApi)
+      console.log(recetas)
     }catch(error){
       console.error(error)
     }
@@ -32,21 +33,21 @@ const RecetasContainer = () => {
   return (
     <Container fluid className='receta-container'>
       <h3 className='title-h'>Recetas</h3>
-      {recetas.length === 0 ? (
+      {recetas && recetas.length > 0  ? (  
+        <Container className='container-receta'>
+        <div className='btn-container-create'>
+          <button onClick={crearReceta}>Crear Receta</button>
+        </div>
+        <div className="container d-flex gap-3 flex-wrap ">
+          {recetas.map((receta, index) => (
+            <Receta key={index} receta={receta}/>
+          ))}
+        </div>
+      </Container>
+      ) : (
         <div className='btn-container-create-big'>
           <button onClick={crearReceta}>Crear Receta</button>
         </div>
-      ) : (
-        <Container className='container-receta'>
-          <div className='btn-container-create'>
-            <button onClick={crearReceta}>Crear Receta</button>
-          </div>
-          <div className="container d-flex gap-3 flex-wrap ">
-            {recetas.map((receta, index) => (
-              <Receta key={index} receta={receta}/>
-            ))}
-          </div>
-        </Container>
       )}
     </Container>
   );
